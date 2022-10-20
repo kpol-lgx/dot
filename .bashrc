@@ -34,6 +34,12 @@ shopt -s autocd
 
 # export QSYS_ROOTDIR="/home/gxliu/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
 
+# history
+HISTSIZE=5000
+
+# less exit if the entire file can be displayed on the first screen
+export LESS="-F"
+
 #############
 ## bash-it ##
 #############
