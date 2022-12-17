@@ -10,7 +10,13 @@
 	defaultBranch = master
 [core]
 	editor = vim
+	excludesFile = /home/gxliu/.gitignore_global
 [diff]
 	tool = vimdiff
 [merge]
 	tool = vimdiff
+[alias]
+	last = cat-file commit HEAD
+	graph = log --all --graph --decorate --oneline
+[color]
+	ui = auto

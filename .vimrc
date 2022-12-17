@@ -14,8 +14,10 @@ set ts=4
 set cindent
 set smarttab
 set ai!
+set encoding=utf-8
 
 imap jk <Esc>
+imap <C-_>k <C-k>
 set nocompatible
 
 " Turn on syntax highlighting.
@@ -87,8 +89,40 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " airline-theme
-let g:airline_theme='violet'
+let g:airline_theme='dark'
 
 " insert current date or time
 nnoremap <F5> "=strftime("%y/%m/%d %H:%M:%S")<CR>P
 inoremap <F5> <C-R>=strftime("%y/%m/%d %H:%M:%S")<CR>
+
+" skeleton files
+autocmd BufNewFile *.sh 0r ~/.skeletons/bash.sh
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'https://github.com/tpope/vim-fugitive'
+" Plug 'shougo/denite.nvim'
+Plug 'tpope/vim-surround'
+Plug 'honza/vim-snippets'
+" Plug 'chriskempson/tomorrow-theme'
+" Plug 'morhetz/gruvbox'
+" Plug 'spacevim/spacevim'
+" Plug 'mhinz/vim-startify'
+" Plug 'junegunn/limelight.vim'
+" Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
+call plug#end()
+
+set cursorline
+
+" markdown preview
+map <F3> :MarkdownPreview<CR>
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 1
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_browser = ''
+let g:mkdp_port = ''
+let g:mkdp_page_title = ' ${name} '
