@@ -16,7 +16,6 @@ set smarttab
 set ai!
 set encoding=utf-8
 
-imap jk <Esc>
 imap <C-_>k <C-k>
 set nocompatible
 
