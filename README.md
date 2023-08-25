@@ -1,4 +1,4 @@
-# dot
+# Dot File
 my dot file
 
 1. `.bashrc`
@@ -7,8 +7,7 @@ my dot file
 4. `.vimrc`
 5. `init.vim`
 
-## 软链接
-
+# 软链接
 ```bash
 cd ~
 ln -s dot/.bashrc .bashrc
@@ -19,3 +18,6 @@ ln -s dot/.vimrc .vimrc
 mkdir -pv .config/nvim
 ln -s dot/init.vim .config/nvim/init.vim
 ```
+
+# Theme: vim/nvim and tmux
+vim/nvim 的主题使用 vim-plug 管理。tmux 主题使用 tpm 管理。
