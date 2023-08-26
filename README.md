@@ -21,3 +21,15 @@ ln -s dot/init.vim .config/nvim/init.vim
 
 # Theme: vim/nvim and tmux
 vim/nvim 的主题使用 vim-plug 管理。tmux 主题使用 tpm 管理。
+
+# 命令行工具
+1. startship: cross-shell prompt
+
+   ```bash
+   curl -sS https://starship.rs/install.sh | sh
+   ```
+3. exa: a modern replacement for ls
+   
+   ```bash
+   apt install exa
+   ```
