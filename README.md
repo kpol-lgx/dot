@@ -1,13 +1,14 @@
 # Dot File
-my dot file
+My dot file include:
 
 1. `.bashrc`
 2. `.gitconfig`
 3. `.tmux.conf`
 4. `.vimrc`
 5. `init.vim`
+6. `plug.vim`
 
-# 软链接
+# Install with symbolic links
 ```bash
 cd ~
 ln -s dot/.bashrc .bashrc
@@ -22,7 +23,23 @@ ln -s dot/init.vim .config/nvim/init.vim
 # Theme: vim/nvim and tmux
 vim/nvim 的主题使用 vim-plug 管理。tmux 主题使用 tpm 管理。
 
-# 命令行工具
+## Install vim-plug
+
+可以直接使用 `plug.vim`
+
+```shell
+mkdir -pv ~/.vim/autoload/
+cp dot/plug.vim ~/.vim/autoload/plug.vim
+```
+
+也可以使用官方的方法。
+
+```shell
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+# other command tools
 1. startship: cross-shell prompt
 
    ```bash
