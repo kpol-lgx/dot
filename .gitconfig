@@ -1,6 +1,6 @@
 [user]
 	name = Gxliu
-	email = another_sky_land@qq.com
+	email = another.sky.and@gmail.com
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
