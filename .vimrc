@@ -101,6 +101,8 @@ autocmd BufNewFile *.sh 0r ~/.skeletons/bash.sh
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'girishji/vimcomplete'
+" Plug 'ervandew/supertab'
 " Plug 'https://github.com/tpope/vim-fugitive'
 " Plug 'shougo/denite.nvim'
 " Plug 'tpope/vim-surround'
@@ -117,11 +119,14 @@ call plug#end()
 set cursorline
 
 " markdown preview
-map <F3> :MarkdownPreview<CR>
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 1
-let g:mkdp_open_to_the_world = 0
-let g:mkdp_browser = ''
-let g:mkdp_port = ''
-let g:mkdp_page_title = ' ${name} '
+" map <F3> :MarkdownPreview<CR>
+" let g:mkdp_auto_start = 0
+" let g:mkdp_auto_close = 1
+" let g:mkdp_refresh_slow = 1
+" let g:mkdp_open_to_the_world = 0
+" let g:mkdp_browser = ''
+" let g:mkdp_port = ''
+" let g:mkdp_page_title = ' ${name} '
+
+" hide the tilde
+let &fillchars..= ',eob: '
