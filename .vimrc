@@ -117,6 +117,8 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 set cursorline
+hi CursorLine cterm=none ctermbg=236
+hi CursorLineNr cterm=none ctermfg=11
 
 " markdown preview
 " map <F3> :MarkdownPreview<CR>
