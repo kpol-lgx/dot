@@ -111,6 +111,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'morhetz/gruvbox'
 " Plug 'spacevim/spacevim'
 " Plug 'mhinz/vim-startify'
+" Plug 'majutsushi/tagbar' " show outline on right, toggle by ':Tagbar'
 " Plug 'junegunn/limelight.vim'
 " Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for': ['markdown', 'vim-plug'] }
