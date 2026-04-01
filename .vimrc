@@ -133,3 +133,6 @@ hi CursorLineNr cterm=none ctermfg=11
 
 " hide the tilde
 let &fillchars..= ',eob: '
+
+" VertSplit Line
+highlight VertSplit cterm=NONE
